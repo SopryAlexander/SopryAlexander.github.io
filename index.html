@@ -5,8 +5,12 @@
   <style>
     .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: "color:lightpink";
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
   padding: 10px;
                     }
   </style>
