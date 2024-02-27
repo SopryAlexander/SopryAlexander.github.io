@@ -1,48 +1,166 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-  <meta charset = "utf-8" />
-  <style>
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #613858;
-  padding: 10px;
-}
-    .grid-container > div {
-  background-color: #7a3b6d;
+<html>
+  <head>
+    <style>
+body{
+  background-color: black;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-    row-gap: 20px;
-    column-gap: 40px;
+  color: lightorange;
 }
-    .grid-item {
-  background-color: rgba(153, 31, 127, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+a{
+  text-decoration: none;
+  color: ghostwhite;
+}
+h1{
+  color: ghostwhite;  
+  position: relative; bottom: -10px;
   text-align: center;
 }
-  </style>
-</head>
-
-<body>
-<h1>Alexander Soprych</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
-</div>
-</body>
-
+h2{
+  color: ghostwhite;  
+  position: relative; bottom: -10px;
+  text-decoration: overline;
+  text-decoration-color: lightpink;
+  font-style: oblique;
+  text-align: right;
+  font-size: 15px;
+}
+h3{
+  color: ghostwhite;  
+  position: relative; bottom: -10px;
+  font-style: oblique;
+  text-align: center;
+}
+h6{
+  color: ghostwhite;
+  font-style: oblique;
+  text-align: center;
+}
+p{
+  color: ghostwhite;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: center;
+  text-decoration: inherit;
+  position: relative; bottom: -25px;
+}
+li{
+  color: ghostwhite;
+  font-size: 25px;
+  font-style: oblique;
+  text-align: left;
+  text-decoration: inherit;
+  list-style-position: inside;
+  color: lightpink;
+}
+img{
+  width: 720px;
+  align-self: center;
+  margin-bottom: -25px;
+  border-radius: 20px;
+  border-bottom: solid;
+}
+.Main_Title{
+  color: ghostwhite;
+  text-align: left;
+  font-size: 25px;
+  text-decoration: overline;
+  text-decoration-color: lightpink;
+}
+.Pink_Border{
+  align-self: center;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-bottom-color: lightpink;
+  border-width: medium;
+}
+.Orange_Border{
+  align-self: center;
+  margin-top: 50px;
+  border-radius: 20px;
+  border-bottom: solid;
+  border-bottom-color: orange;
+  border-width: medium; 
+}
+.Logo{
+  align-self: center;
+  border-bottom: solid;
+  border-bottom-color: orange;
+  border-top: solid;
+  border-top-color: orange;
+  margin-top: 25px;
+}
+.End_List{
+  color: ghostwhite;
+  text-decoration: overline;
+  text-decoration-color: orange;
+  position: relative; bottom: -10px;
+}
+.End_List_2{
+  color: ghostwhite;
+  text-decoration: overline;
+  text-decoration-color: lightpink;
+  position: relative; bottom: -10px;
+}
+    </style>
+  </head>
+  <body>
+    <a href="index.html"> <h1 class="Main_Title">
+      Królik
+      </h1> 
+    </a>
+    <a href="About.html"> <h2>
+      Our Story
+      </h2> 
+    </a>
+    <a href="Dealerships.html"> <h2>
+      Our Services
+      </h2> 
+    </a>
+    <img src="Kr--lik_Apollo_Top_Dark.png" alt="Królik Apollo Top Lights" />
+    <h1>
+      Simplicity
+    </h1>
+    <img src="Kr--lik_Apollo_Front_Dark.png" alt="Królik Apollo Lights" />
+    <h1>
+      Sophistication
+    </h1>
+    <img src="Kr--lik_Apollo_Front_Light.png" alt="Królik Apollo Front" class="Pink_Border"/>
+    <h1>
+      Apollo
+    </h1>
+    <h3> 
+      From
+      <br>
+      Królik
+    </h3>
+    <img src="Kr--lik_Apollo_Rear_Dark.png" alt="Królik Apollo Rear Dark" class="Pink_Border"/>
+    <p> 
+      There's no need to compromise. 
+      <br>  
+      Apollo sure doesn't. 
+    </p>
+    <img src="Kr--lik_Apollo_Rear.png" alt="Królik Apollo Rear" class="Orange_Border"/>    
+    <img src="Kr--lik_Apollo_Top.png" alt="Królik Apollo Top" class="Orange_Border"/> 
+    <p>
+      Affordable Design
+      <br>
+      Grounded in Practicality
+    </p>    
+    <img src="Kr--lik_Apollo_Logo.png" alt="Królik Apollo Logo" class="Logo"/>    
+    <h6>
+      "Retro Signature" by Nirmana Visual
+    </h6>    
+    <h1>
+      Coming 2025
+    </h1>   
+    <br>    
+    <p class="End_List">  
+        <a href="FAQ.html"> FAQ </a>
+      <br> 
+        <a href="About.html"> Our story </a>
+      <br>
+        <a href="Dealerships.html"> Find a Dealer </a>
+    </p>
+  </body>
 </html>
