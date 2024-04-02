@@ -19,7 +19,7 @@ h2{
   text-decoration-color: lightpink;
   font-style: oblique;
   text-align: right;
-  font-size: 15px;
+  font-size: 25px;
 }
 h3{
   color: ghostwhite;  
@@ -34,7 +34,7 @@ h6{
 }
 p{
   color: ghostwhite;
-  font-size: 20px;
+  font-size: 25px;
   font-style: oblique;
   text-align: center;
   text-decoration: inherit;
@@ -42,7 +42,7 @@ p{
 }
 li{
   color: ghostwhite;
-  font-size: 25px;
+  font-size: 30px;
   font-style: oblique;
   text-align: left;
   text-decoration: inherit;
@@ -59,7 +59,7 @@ img{
 .Main_Title{
   color: ghostwhite;
   text-align: left;
-  font-size: 25px;
+  font-size: 40px;
   text-decoration: overline;
   text-decoration-color: lightpink;
 }
