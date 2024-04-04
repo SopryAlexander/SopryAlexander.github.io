@@ -17,7 +17,7 @@
   flex-grow: 1;
 }
 
-  img {
+img {
 max-height: 100%;
 min-width: 100%;
 border-radius: 10px;
@@ -61,11 +61,6 @@ vertical-align: bottom;
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-  
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -101,12 +96,10 @@ vertical-align: bottom;
 <script>
 function openMenu() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeMenu() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
 }
 </script>
   
