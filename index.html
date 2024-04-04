@@ -16,6 +16,7 @@ body{
 }
 
 .flex-container > div {
+  position: relative;
   background-color: #262626;
   margin: 10px;
   padding: 5px;
@@ -34,6 +35,25 @@ horizontal-align: center;
 vertical-align: bottom;
 }
 
+.imgTitle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+ 
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+  
 .sidenav {
   height: 100%;
   width: 0;
@@ -87,7 +107,7 @@ vertical-align: bottom;
 </div>
   
 <div class="flex-container">
-  <div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"></a></div>
+  <div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="img__description"> Królik Apollo</p></a></div>
   <div><a href="Królik_Main.html"><img src="HighresScreenshot00003.png" alt="Kowloon Walled City Front"></a></div>
   <br>
   <div><a href="Królik_Main.html"><img src="Alfa_Romeo_Giulia_Sprint_Final_2.1.png" alt="Alfa Romeo Giulia Sprint"></a></div>
