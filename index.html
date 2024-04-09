@@ -47,11 +47,8 @@ img {
 #imgHover {
   img src="Królik_Apollo_Front_Dark.png";
   background-size: cover;
-  <!--max-height: 100%; -->
-  <!-- min-width: 100%; -->
-  
-  width: 200px;
-  height: 200px;
+  max-height: 100%;
+  min-width: 100%;
   
   border-radius: 10px;
   border-bottom: solid;
@@ -157,7 +154,8 @@ hoverable .imgOverlay {
   
 <div class="flex-container">
 
-  <div class="flex-item" id="imgHover"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div>
+  <div class="flex-item"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" id="my-image" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')">
+ Królik Apollo</p></div>
   <!--<div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div> -->
     <!-- <div class = "imgOverlay"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik Apollo Front"></a></div> -->
 
@@ -180,6 +178,10 @@ function openMenu() {
 
 function closeMenu() {
   document.getElementById("mySidenav").style.width = "0";
+}
+
+function changeImage(newImagePath) {
+  document.getElementById('my-image').src = newImagePath;
 }
 </script>
   
