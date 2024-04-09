@@ -14,6 +14,8 @@ body{
   display: flex;
   max-width: 95%;
   position: absolute; 
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -32,13 +34,37 @@ hoverable{
 }
 
 img {
-max-height: 100%;
-min-width: 100%;
-border-radius: 10px;
-border-bottom: solid;
-object-fit: cover;
-horizontal-align: center; 
-vertical-align: bottom;
+  max-height: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border-bottom: solid;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
+
+imgHover {
+  background-image: url("Królik_Apollo_Front_Dark.png");
+  background-size: cover;
+  max-height: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border-bottom: solid;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
+
+imgHover:hover{
+  background-image: url("Królik_Apollo_Front_Light.png");
+}
+
+.flex-item {
+  transition: transform 0.5s ease;
+}
+
+.flex-item:hover {
+  transform: scale(1.1);
 }
 
 hoverable .imgOverlay {
@@ -126,7 +152,8 @@ hoverable .imgOverlay {
   
 <div class="flex-container">
 
-  <div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div>
+  <div class="flex-item" id="imgHover"><p class="imgTitle"> Królik Apollo</p></div>
+  <!--<div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div> -->
     <!-- <div class = "imgOverlay"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik Apollo Front"></a></div> -->
 
   <div><a href="Królik_Main.html"><img src="HighresScreenshot00003.png" alt="Kowloon Walled City Front"></a></div>
