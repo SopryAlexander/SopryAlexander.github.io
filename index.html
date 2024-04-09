@@ -44,8 +44,7 @@ img {
   vertical-align: bottom;
 }
 
-#imgHover {
-  img src="Królik_Apollo_Front_Dark.png";
+#imgHoverK {
   background-size: cover;
   max-height: 100%;
   min-width: 100%;
@@ -55,10 +54,6 @@ img {
   object-fit: cover;
   horizontal-align: center; 
   vertical-align: bottom;
-}
-
-#imgHover:hover{
-  img src="Królik_Apollo_Front_Light.png";
 }
 
 .flex-item {
@@ -154,7 +149,7 @@ hoverable .imgOverlay {
   
 <div class="flex-container">
 
-  <div class="flex-item"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" id="my-image" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')">
+  <div class="flex-item"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')">
  Królik Apollo</p></div>
   <!--<div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div> -->
     <!-- <div class = "imgOverlay"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik Apollo Front"></a></div> -->
@@ -181,7 +176,7 @@ function closeMenu() {
 }
 
 function changeImage(newImagePath) {
-  document.getElementById('my-image').src = newImagePath;
+  document.getElementById('imgHoverK').src = newImagePath;
 }
 </script>
   
