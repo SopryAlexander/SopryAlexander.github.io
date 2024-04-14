@@ -50,7 +50,7 @@ li{
   color: lightpink;
 }
 img{
-  /* width: 1080px; */
+  width: 1080px;
   max-width: 80%;
   align-self: center;
   margin-bottom: -25px;
