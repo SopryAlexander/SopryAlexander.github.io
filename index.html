@@ -21,7 +21,7 @@ body{
   display: flex;
   max-width: 95%;
   position: absolute; 
-  justify-content: right;
+  justify-content: flex-end;
   align-items: right;
   flex-wrap: wrap;
 }
@@ -130,10 +130,10 @@ hoverable .imgOverlay {
   .sidenav a {font-size: 18px;}
 }
 @media only screen and (max-width : 480px) {
-  img {max-width: 90%;}
+  img {max-width: 90%; max-height: 90%;}
   #imgHoverK {max-width: 90%;}
   .flex-container{max-width: 90%; max-height: 90%;}
-  .flex-container > div {max-height: 90%;}
+  .flex-container > div {max-width: 90%; max-height: 90%;}
 }
 </style>
 </head>
