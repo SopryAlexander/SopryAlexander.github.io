@@ -55,6 +55,39 @@ img {
   horizontal-align: center; 
   vertical-align: bottom;
 }
+#imgHoverA {
+  background-size: cover;
+  max-height: 100%;
+  /* max-width: 100%; */
+  border-radius: 10px;
+  border-bottom: solid;
+  border-bottom-color: red;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
+#imgHoverT {
+  background-size: cover;
+  max-height: 100%;
+  /* max-width: 100%; */
+  border-radius: 10px;
+  border-bottom: solid;
+  border-bottom-color: orange;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
+#imgHoverG {
+  background-size: cover;
+  max-height: 100%;
+  /* max-width: 100%; */
+  border-radius: 10px;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
 .flex-item {
   transition: transform 0.5s ease;
 }
@@ -148,24 +181,36 @@ hoverable .imgOverlay {
 </div>
   
 <div class="flex-container">
-
   <div class="flex-item">
-     <a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik_Apollo_Front_Dark" id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')"></a>
+     <a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik_Apollo_Front_Dark" 
+        id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')"></a>
   </div>
-  
-  <!-- <div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div> -->
-  <!-- <div class = "imgOverlay"><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik Apollo Front"></a></div> -->
-
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="HighresScreenshot00003.png" alt="Kowloon Walled City Front"></a></div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="HighresScreenshot00003.png" alt="Kowloon Walled City Front"></a>
+  </div>
   <br>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Alfa_Romeo_Giulia_Sprint_Final_2.1.png" alt="Alfa Romeo Giulia Sprint"></a></div>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Alfa_Romeo_Carabinieri_Final_2.1.png" alt="Alfa Romeo Carabinieri"></a></div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Alfa_Romeo_Giulia_Sprint_Final_2.1.png" alt="Alfa Romeo Giulia Sprint" id="imgHoverA"></a>
+  </div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Alfa_Romeo_Carabinieri_Final_2.1.png" alt="Alfa Romeo Carabinieri"></a>
+  </div>
   <br>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Glock_17_Final_Render_1.png" alt="Glock 17"></a></div>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers"></a></div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Glock_17_Final_Render_1.png" alt="Glock 17"
+       id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_2.png')" onmouseout="changeImage('Glock_17_Final_Render_1.png')"></a>
+  </div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverK"></a>
+  </div>
   <br>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Low_Poly_Tiger_1_Final_2.2.png" alt="Low Poly Tiger 1"></a></div>
-  <div class="flex-item" ><a href="Królik_Main.html"><img src="Low_Poly_Panther_Final_2.2.png" alt="Low Poly Panther"></a></div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Low_Poly_Tiger_1_Final_2.2.png" alt="Low Poly Tiger 1" 
+       id="imgHoverT" onmouseover="changeImage('Low_Poly_Tiger_1_Final_2.3.png')" onmouseout="changeImage('Low_Poly_Tiger_1_Final_2.2.png')"></a>
+  </div>
+  <div class="flex-item" >
+    <a href="Królik_Main.html"><img src="Low_Poly_Panther_Final_2.2.png" alt="Low Poly Panther"></a>
+  </div>
 </div>
 
 <script>
