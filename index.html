@@ -7,16 +7,9 @@
 
 body{
   background-color: black;
-  /* text-align: left; */
+  text-align: left;
   color: lightorange;
 }
-.Pink_Border{
-  align-self: center;
-  border-radius: 20px;
-  border-bottom: solid;
-  border-bottom-color: lightpink;
-  border-width: medium;
-}  
 .flex-container{
   display: flex;
   width: fit-content;
@@ -41,7 +34,6 @@ hoverable{
   position: relative
 }
 img {
-  max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -135,7 +127,7 @@ hoverable .imgOverlay {
 @media only screen and (max-width : 480px) {
   /* img {max-width: 90%;} */
   /* #imgHoverK {max-width: 90%;} */
-  .flex-container {max-width: 75%; justify-content: flex-end;}
+  .flex-container {max-width: 100%; justify-content: flex-end;}
   .flex-container > div {max-width: 100%;}
 }
 
@@ -155,7 +147,7 @@ hoverable .imgOverlay {
   
 <div class="flex-container">
 
-  <div class="flex-item" class="Pink_Border">
+  <div class="flex-item">
      <a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik_Apollo_Front_Dark" id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')"></a>
      <p class="imgTitle"> Królik Apollo</p>
   </div>
