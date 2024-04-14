@@ -34,6 +34,7 @@ hoverable{
   position: relative
 }
 img {
+  max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -46,6 +47,9 @@ img {
   background-size: cover;
   max-height: 100%;
   max-width: 100%;
+
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
   
   border-radius: 10px;
   border-bottom: solid;
@@ -177,7 +181,15 @@ function closeMenu() {
 }
 
 function changeImage(newImagePath) {
-  document.getElementById('imgHoverK').src = newImagePath;
+  var img = document.getElementById('imgHoverK');
+  img.style.opacity = 0;
+
+  setTimeout(function() {
+    img.src = newImagePath;
+    img.style.opacity = 1; // Fade the image in
+  }, 500);
+  
+  //document.getElementById('imgHoverK').src = newImagePath;
 }
 </script>
   
