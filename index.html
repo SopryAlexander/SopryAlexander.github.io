@@ -16,7 +16,7 @@ body{
   max-width: 100%;
   position: absolute; 
   justify-content: flex-end;
-  /* margin-right: auto; */
+  margin-right: auto;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -29,7 +29,7 @@ body{
   height: 50vh;
   flex-grow: 1;
   min-height: 0;
-  /* margin-right: auto; */
+  margin-right: auto;
 }
 hoverable{
   position: relative
@@ -70,7 +70,7 @@ hoverable .imgOverlay {
   visibility: visible;
   opacity: 1;
 }  
-.imgTitle {
+/* .imgTitle {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -91,7 +91,7 @@ hoverable .imgOverlay {
 .flex-container:hover .imgTitle {
   visibility: visible;
   opacity: 1;
-}  
+}  */
 .sidenav {
   height: 100%;
   width: 0;
@@ -126,7 +126,7 @@ hoverable .imgOverlay {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-@media only screen and (max-width : 480px) {
+@media screen and (max-width : 480px) {
   /* img {max-width: 90%;} */
   /* #imgHoverK {max-width: 90%;} */
   .flex-container {max-width: 100%; justify-content: flex-end;}
@@ -151,7 +151,6 @@ hoverable .imgOverlay {
 
   <div class="flex-item">
      <a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik_Apollo_Front_Dark" id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')"></a>
-     <p class="imgTitle"> Królik Apollo</p>
   </div>
   
   <!-- <div><a href="Królik_Main.html"><img src="Królik_Apollo_Front_Light.png" alt="Królik Apollo Front"><p class="imgTitle"> Królik Apollo</p></div> -->
