@@ -57,7 +57,7 @@ img{
   border-radius: 20px;
   border-bottom: solid;
 }
-@media only screen and (max-width : 480px) {
+@media screen and (max-width : 480px) {
   img{max-width:90%;}
   /* .Main_Title{font-size: 25px}
   h2{font-size: 15px) */
