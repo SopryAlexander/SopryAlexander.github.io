@@ -15,8 +15,8 @@ body{
   display: flex;
   max-width: 95%;
   position: absolute; 
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   flex-wrap: wrap;
 }
 
@@ -40,7 +40,7 @@ img {
   border-radius: 10px;
   border-bottom: solid;
   object-fit: cover;
-  horizontal-align: center; 
+  horizontal-align: right; 
   vertical-align: bottom;
 }
 
@@ -137,6 +137,13 @@ hoverable .imgOverlay {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+@media only screen and (max-width : 480px) {
+
+  img { min-width: 75%;}
+  #imgHoverK { min-width: 75%;}
+
+  }
 </style>
 </head>
 <body>
