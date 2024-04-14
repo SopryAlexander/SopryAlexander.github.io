@@ -162,7 +162,7 @@ hoverable .imgOverlay {
 @media screen and (max-width : 480px) {
   /* img {max-width: 90%;} */
   /* #imgHoverK {max-width: 90%;} */
-  .flex-container {max-width: 100%; justify-content: flex-end;}
+  .flex-container {max-width: 100%; /* justify-content: flex-end */;}
   .flex-container > div {max-width: 100%;}
 }
 
@@ -183,7 +183,7 @@ hoverable .imgOverlay {
 <div class="flex-container">
   <div class="flex-item">
      <a href="Królik_Main.html"><img src="Królik_Apollo_Front_Dark.png" alt="Królik_Apollo_Front_Dark" 
-        id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png')"></a>
+        id="imgHoverK" onmouseover="changeImage('Królik_Apollo_Front_Light.png', 'imgHoverK')" onmouseout="changeImage('Królik_Apollo_Front_Dark.png', 'imgHoverK')"></a>
   </div>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="HighresScreenshot00003.png" alt="Kowloon Walled City Front"></a>
@@ -198,7 +198,7 @@ hoverable .imgOverlay {
   <br>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Glock_17_Final_Render_1.png" alt="Glock 17"
-       id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_2.png')" onmouseout="changeImage('Glock_17_Final_Render_1.png')"></a>
+       id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_2.png', 'imgHoverG')" onmouseout="changeImage('Glock_17_Final_Render_1.png', 'imgHoverG')"></a>
   </div>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverK"></a>
@@ -206,7 +206,7 @@ hoverable .imgOverlay {
   <br>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Low_Poly_Tiger_1_Final_2.2.png" alt="Low Poly Tiger 1" 
-       id="imgHoverT" onmouseover="changeImage('Low_Poly_Tiger_1_Final_2.3.png')" onmouseout="changeImage('Low_Poly_Tiger_1_Final_2.2.png')"></a>
+       id="imgHoverT" onmouseover="changeImage('Low_Poly_Tiger_1_Final_2.3.png', 'imgHoverT')" onmouseout="changeImage('Low_Poly_Tiger_1_Final_2.2.png', 'imgHoverT')"></a>
   </div>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Low_Poly_Panther_Final_2.2.png" alt="Low Poly Panther"></a>
@@ -222,8 +222,8 @@ function closeMenu() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-function changeImage(newImagePath) {
-  document.getElementById('imgHoverK').src = newImagePath;
+function changeImage(newImagePath, imgID) {
+  document.getElementById(imgID).src = newImagePath;
 }
 </script>
   
