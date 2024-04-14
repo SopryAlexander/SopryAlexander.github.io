@@ -15,8 +15,8 @@ body{
   width: fit-content;
   max-width: 100%;
   position: absolute; 
-  justify-content: flex-end;
-  margin-right: auto;
+  /* justify-content: flex-end; */
+  /* margin-right: auto; */
   align-items: center;
   flex-wrap: wrap;
 }
@@ -29,7 +29,7 @@ body{
   height: 50vh;
   flex-grow: 1;
   min-height: 0;
-  /* margin-right: auto; */
+  margin-right: auto;
 }
 hoverable{
   position: relative
@@ -116,37 +116,6 @@ img {
 .flex-item:hover {
   transform: scale(1.01);
 }
-hoverable .imgOverlay {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-}
-.flex-container:hover .imgOverlay {
-  visibility: visible;
-  opacity: 1;
-}  
-/* .imgTitle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50px;
-  right: 0;
-  text-align: left;
-  
-  width: 150px;
-  height: 35px;
-  
-  font-size: 25px;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  
-  transition: opacity .2s, visibility .2s;
-}
-.flex-container:hover .imgTitle {
-  visibility: visible;
-  opacity: 1;
-}  */
 .sidenav {
   height: 100%;
   width: 0;
