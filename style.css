@@ -56,6 +56,9 @@ img{
   border-radius: 20px;
   border-bottom: solid;
 }
+@media only screen and (max-width : 480px) {
+  img{max-width: 75%;}
+}
 .Main_Title{
   color: ghostwhite;
   text-align: left;
