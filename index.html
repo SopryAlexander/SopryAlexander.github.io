@@ -88,6 +88,17 @@ img {
   horizontal-align: center; 
   vertical-align: bottom;
 }
+#imgHoverP {
+  background-size: cover;
+  max-height: 100%;
+  /* max-width: 100%; */
+  border-radius: 10px;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  object-fit: cover;
+  horizontal-align: center; 
+  vertical-align: bottom;
+}
 #imgHoverG {
   background-size: cover;
   max-height: 100%;
@@ -173,7 +184,7 @@ hoverable .imgOverlay {
 @media screen and (max-width : 480px) {
   /* img {max-width: 90%;} */
   /* #imgHoverK {max-width: 90%;} */
-  .flex-container {max-width: 100%; /* justify-content: flex-end */;}
+  /* .flex-container {max-width: 100%; justify-content: flex-end;} */
   .flex-container > div {max-width: 100%;}
 }
 
@@ -209,18 +220,19 @@ hoverable .imgOverlay {
   <br>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Glock_17_Final_Render_1.png" alt="Glock 17"
-       id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_2.png', 'imgHoverG')" onmouseout="changeImage('Glock_17_Final_Render_1.png', 'imgHoverG')"></a>
+       id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_3.png', 'imgHoverG')" onmouseout="changeImage('Glock_17_Final_Render_1.png', 'imgHoverG')"></a>
   </div>
   <div class="flex-item" >
-    <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverK"></a>
+    <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverK" id="imgHoverT"></a>
   </div>
   <br>
   <div class="flex-item" >
     <a href="Królik_Main.html"><img src="Low_Poly_Tiger_1_Final_2.2.png" alt="Low Poly Tiger 1" 
-       id="imgHoverT" onmouseover="changeImage('Low_Poly_Tiger_1_Final_2.3.png', 'imgHoverT')" onmouseout="changeImage('Low_Poly_Tiger_1_Final_2.2.png', 'imgHoverT')"></a>
+       id="imgHoverT" onmouseover="changeImage('Low_Poly_Tiger_1_Final_2.4.png', 'imgHoverT')" onmouseout="changeImage('Low_Poly_Tiger_1_Final_2.2.png', 'imgHoverT')"></a>
   </div>
   <div class="flex-item" >
-    <a href="Królik_Main.html"><img src="Low_Poly_Panther_Final_2.2.png" alt="Low Poly Panther"></a>
+    <a href="Królik_Main.html"><img src="Low_Poly_Panther_Final_2.2.png" alt="Low Poly Panther"
+       id="imgHoverP" onmouseover="changeImage('Low_Poly_Panther_Final_2.2.png', 'imgHoverP')" onmouseout="changeImage('Low_Poly_Panther_Final_2.2.png', 'imgHoverP')"></a>
   </div>
 </div>
 
