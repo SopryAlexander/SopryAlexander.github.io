@@ -15,7 +15,7 @@ body{
   display: flex;
   max-width: 95%;
   position: absolute; 
-  justify-content: right;
+  justify-content: flex-end;
   align-items: right;
   flex-wrap: wrap;
 }
@@ -28,6 +28,7 @@ body{
   border-radius: 10px;
   height: 50vh;
   flex-grow: 1;
+  margin-left: auto;
 }
 
 hoverable{
@@ -140,9 +141,9 @@ hoverable .imgOverlay {
 
 @media only screen and (max-width : 480px) {
 
-  img { min-width: 75%;}
-  #imgHoverK { min-width: 75%;}
-
+  img {max-width: 75%;}
+  #imgHoverK {max-width: 75%;}
+  .flex-container{max-width: 75%;}
   }
 </style>
 </head>
