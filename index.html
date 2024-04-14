@@ -12,12 +12,12 @@ body{
 }
 .flex-container{
   display: flex;
-  width: fit-content;
-  max-width: 95%;
+  /* width: fit-content; */
+  max-width: 100%;
   position: absolute; 
   justify-content: flex-end;
-  margin-right: auto;
-  align-items: right;
+  /* margin-right: auto; */
+  /* align-items: right; */
   flex-wrap: wrap;
 }
 .flex-container > div {
@@ -28,7 +28,7 @@ body{
   border-radius: 10px;
   height: 50vh;
   flex-grow: 1;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 hoverable{
   position: relative
@@ -181,15 +181,7 @@ function closeMenu() {
 }
 
 function changeImage(newImagePath) {
-  var img = document.getElementById('imgHoverK');
-  img.style.opacity = 0;
-
-  setTimeout(function() {
-    img.src = newImagePath;
-    img.style.opacity = 1; // Fade the image in
-  }, 500);
-  
-  //document.getElementById('imgHoverK').src = newImagePath;
+  document.getElementById('imgHoverK').src = newImagePath;
 }
 </script>
   
