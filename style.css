@@ -58,10 +58,9 @@ img{
   border-bottom: solid;
 }
 @media only screen and (max-width : 480px) {
-  img{max-width:50%;}
-  .Pink_Border{max-width:75%;}
-  .Orange_Border{max-width:75%;}
-  .Logo{max-width:75%;}
+  img{max-width:75%;}
+  .Main_Title{font-size: 25px}
+  h2{font-size: 15px)
 }
 .Main_Title{
   color: ghostwhite;
