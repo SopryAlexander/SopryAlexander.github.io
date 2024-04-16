@@ -124,14 +124,6 @@ img {
   /*horizontal-align: center; 
   vertical-align: bottom; */
 }
-@media screen and (min-width : 1080px) {
-.flex-item:hover {
-  transform: scale(1.01);
-}
-.flex-container > div {
-  height: 50%;
-}
-}
 .flex-item {
   transition: transform 0.5s ease;
 }
@@ -164,6 +156,14 @@ img {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+@media screen and (min-width : 1080px) {
+.flex-item:hover {
+  transform: scale(1.01);
+}
+.flex-container > div {
+  max-width: 50%;
+}
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
