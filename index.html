@@ -34,7 +34,7 @@ body{
   padding: 5px;
   border-radius: 10px;
   flex-basis: auto;
-  height: 50vh;
+  height: auto;
  /*
  position: relative;
   background-color: #262626;
@@ -57,10 +57,7 @@ img {
   border-bottom: solid;
   border-bottom-color: lightpink;
   object-fit: cover;
-  /*horizontal-align: center; 
-  vertical-align: bottom; */
 }
-@media screen and (min-width : 1080px) {
 #imgHoverK {
   background-size: cover;
   height: auto;
@@ -127,9 +124,12 @@ img {
   /*horizontal-align: center; 
   vertical-align: bottom; */
 }
+@media screen and (min-width : 1080px) {
 .flex-item:hover {
   transform: scale(1.01);
 }
+.flex-container > div {
+  /*height: 50vh;*/
 }
 .flex-item {
   transition: transform 0.5s ease;
