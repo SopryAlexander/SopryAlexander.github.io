@@ -36,7 +36,7 @@ hoverable{
 }
 img {
   height: auto;
-  /*max-width: 100%;*/
+  max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
   border-bottom-color: lightpink;
@@ -44,9 +44,10 @@ img {
   horizontal-align: center; 
   vertical-align: bottom;
 }
+@media screen and (max-width : 1080px) {
 #imgHoverK {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -57,7 +58,7 @@ img {
 }
 #imgHoverA {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -68,7 +69,7 @@ img {
 }
 #imgHoverC {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -79,7 +80,7 @@ img {
 }
 #imgHoverT {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -90,7 +91,7 @@ img {
 }
 #imgHoverP {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -101,7 +102,7 @@ img {
 }
 #imgHoverG {
   background-size: cover;
-  max-height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom: solid;
@@ -110,11 +111,12 @@ img {
   horizontal-align: center; 
   vertical-align: bottom;
 }
-.flex-item {
-  transition: transform 0.5s ease;
-}
 .flex-item:hover {
   transform: scale(1.01);
+}
+}
+.flex-item {
+  transition: transform 0.5s ease;
 }
 .sidenav {
   height: 100%;
