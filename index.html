@@ -158,12 +158,11 @@ img {
   margin-left: 50px;
 }
 @media screen and (min-width : 1080px) {
-.flex-item:hover {
-  transform: scale(1.01);
+.flex-item:hover {transform: scale(1.01);
 }
 .flex-container > div {
-  max-width: 50%;
-}
+  /*max-width: 50%;*/
+  flex-basis: calc(50% - 20px); width: calc(50% - 20px); height: auto;}
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
