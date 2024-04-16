@@ -16,15 +16,27 @@ body{
 .flex-container{
   display: flex;
   max-width: 100%;
-  max-height: 100%;
-  position: absolute; 
-  /*justify-content: flex-end;*/
-  /*margin-right: auto;*/
   align-items: center;
   flex-wrap: wrap;
+ /*
+ display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute; 
+  justify-content: flex-end;
+  margin-right: auto;
+  align-items: center;
+  flex-wrap: wrap; */
 }
 .flex-container > div {
-  position: relative;
+  background-color: #262626;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  flex-basis: auto;
+  height: auto;
+ /*
+ position: relative;
   background-color: #262626;
   margin: 10px;
   padding: 5px;
@@ -32,8 +44,8 @@ body{
   height: 50vh;
   flex-grow: 1;
   align-self: auto;
-  /*min-height: 0;*/
-  /*margin-right: auto;*/
+  min-height: 0;
+  margin-right: auto;*/
 }
 hoverable{
   position: relative
@@ -45,8 +57,8 @@ img {
   border-bottom: solid;
   border-bottom-color: lightpink;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 @media screen and (min-width : 1080px) {
 #imgHoverK {
@@ -57,8 +69,8 @@ img {
   border-bottom: solid;
   border-bottom-color: lightpink;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 #imgHoverA {
   background-size: cover;
@@ -68,8 +80,8 @@ img {
   border-bottom: solid;
   border-bottom-color: red;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 #imgHoverC {
   background-size: cover;
@@ -79,8 +91,8 @@ img {
   border-bottom: solid;
   border-bottom-color: yellowgreen;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 #imgHoverT {
   background-size: cover;
@@ -90,8 +102,8 @@ img {
   border-bottom: solid;
   border-bottom-color: moccasin;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 #imgHoverP {
   background-size: cover;
@@ -101,8 +113,8 @@ img {
   border-bottom: solid;
   border-bottom-color: grey;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 #imgHoverG {
   background-size: cover;
@@ -112,8 +124,8 @@ img {
   border-bottom: solid;
   border-bottom-color: grey;
   object-fit: cover;
-  horizontal-align: center; 
-  vertical-align: bottom;
+  /*horizontal-align: center; 
+  vertical-align: bottom; */
 }
 .flex-item:hover {
   transform: scale(1.01);
@@ -199,7 +211,7 @@ img {
        id="imgHoverG" onmouseover="changeImage('Glock_17_Final_Render_3.png', 'imgHoverG')" onmouseout="changeImage('Glock_17_Final_Render_1.png', 'imgHoverG')"></a>
   </div>
   <div class="flex-item" >
-    <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverK" id="imgHoverT"></a>
+    <a href="Królik_Main.html"><img src="Studio_2_Project_4_Final_1.png" alt="Desert Tigers" id="imgHoverT"></a>
   </div>
   <br>
   <div class="flex-item" >
