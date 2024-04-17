@@ -60,8 +60,8 @@ img{
 }
 @media screen and (max-width : 480px) {
   img{max-width:90%;}
-  /* .Main_Title{font-size: 25px}
-  h2{font-size: 15px) */
+  .Main_Title{font-size: 25px}
+  h2{font-size: 15px)
 }
 .Main_Title{
   color: ghostwhite;
