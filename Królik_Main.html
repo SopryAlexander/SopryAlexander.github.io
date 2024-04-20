@@ -8,10 +8,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+  <div class="header">
     <a href="Królik_Main.html"> <h1 class="Main_Title">
       Królik
       </h1> 
     </a>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
     <a href="Królik_About.html"> <h2>
       Our Story
       </h2> 
@@ -71,5 +76,16 @@
         <a href="index.html"> Take Me Back </a>
       <br>
     </p>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+    </script>
   </body>
 </html>
