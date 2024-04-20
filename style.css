@@ -103,14 +103,3 @@ img{
   text-decoration-color: lightpink;
   position: relative; bottom: -10px;
 }
-
-.progress-container {
-  border-left: 8px grey;
-  height: 100%;
-  background: #ccc;
-}
-.progress-bar {
-  width: 8px;
-  background: #04AA6D;
-  height: 0%;
-}
