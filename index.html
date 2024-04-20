@@ -105,14 +105,14 @@ img {
 }
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -250px;
   background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: transform 0.5s;
   padding-top: 60px;
 }
 .sidenav a {
@@ -209,10 +209,10 @@ img {
 
 <script>
 function openMenu() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.transform = "translateX(250px)";
 }
 function closeMenu() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.transform = "translateX(0)";
 }
 function changeImage(newImagePath, imgID) {
   document.getElementById(imgID).src = newImagePath;
