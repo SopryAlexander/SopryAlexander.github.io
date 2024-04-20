@@ -166,29 +166,6 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
-//////////////////////////////////////////////////////////
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-.active, .collapsible:hover {
-  background-color: #555;
-}
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-//////////////////////////////////////////////////////////
- 
 @media screen and (min-width : 720px) {
 .flex-item:hover {transform: scale(1.01);
 }
@@ -215,11 +192,8 @@ img {
 <span style = "font-size:30px; cursor:pointer; color: white; " onclick="openMenu()">&#9776; Menu</span>
   
 <div id="mySidenav" class="sidenav">
- <button type="button" class="collapsible">Open Collapsible</button>
- <div class="content">
- <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
- </div>
- <a href="Królik_Main.html">Królik Apollo</a>
+<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  <a href="Królik_Main.html">Królik Apollo</a>
   <a href="#">Work 2</a>
   <a href="#">Example 3</a>
   <a href="#">Project 4</a>
@@ -266,31 +240,12 @@ img {
 function openMenu() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeMenu() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
 function changeImage(newImagePath, imgID) {
   document.getElementById(imgID).src = newImagePath;
 }
- 
-//////////////////////////////////////////////////////////
-var coll = document.getElementsByClassName("collapsible");
-
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-//////////////////////////////////////////////////////////
-
 </script>
   
 </body>
