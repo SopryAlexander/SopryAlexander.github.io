@@ -4,14 +4,13 @@ body{
   color: orange;
 }
 img {
-  max-height: 100%;
-  max-width: 100%;
+  width: 1080px;
+  max-width: 80%;
+  align-self: center;
   border-radius: 10px;
-  border-bottom: solid;
-  border-bottom-color: lightpink;
   object-fit: cover;
 }
-  .sidenavtitle {
+.sidenavtitle {
   padding: 4px 8px 4px 32px;
   text-decoration: none;
   font-size: 30px;
