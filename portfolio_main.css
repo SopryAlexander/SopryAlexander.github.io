@@ -63,7 +63,7 @@ hr {
   margin-left: 50px;
 }
 video {
-  max-width: 90%; 
+  max-width: 100%; 
   max-height: auto;
   postion: center; 
 }
