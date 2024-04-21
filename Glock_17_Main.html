@@ -3,68 +3,10 @@
 <head>
  <title>Glock 18 | Showcase</title>
  <link rel="icon" href="glock_icon.png">
- 
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-  background-color: black;
-  text-align: left;
-  color: orange;
-}
-img {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 10px;
-  border-bottom: solid;
-  border-bottom-color: lightpink;
-  object-fit: cover;
-}
-  .sidenavtitle {
-  padding: 4px 8px 4px 32px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #FFC300;
-  display: block;
-}
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: transform 0.5s;
-  padding-top: 60px;
-}
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-@media screen and (max-width : 480px) {
-  img {max-width: 100%;}
-}
+ <link rel="stylesheet" href="portfolio_main.css">
 
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
@@ -89,6 +31,14 @@ img {
 
 <img src="Glock_17_Final_Render_1.png" alt="Glock 17">
 
+<script>
+function openMenu() {
+  document.getElementById("mySidenav").style.transform = "translateX(250px)";
+}
+function closeMenu() {
+  document.getElementById("mySidenav").style.transform = "translateX(0)";
+}
+</script>
 
 </body>
 </html>
