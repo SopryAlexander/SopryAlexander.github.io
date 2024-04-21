@@ -6,7 +6,9 @@ body{
 h1{
   color: ghostwhite;  
   position: relative; bottom: -10px;
+  font-family: Helvetica; 
   text-align: right;
+  font-size: 40px;
 }
 img {
   width: 1080px;
