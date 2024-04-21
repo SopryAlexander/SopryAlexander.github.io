@@ -11,7 +11,7 @@ h1{
   font-size: 40px;
 }
 img {
-  width: 1080px;
+  /*width: 1080px;*/
   max-width: 90%;
   postion: center;
   align-self: center;
@@ -19,11 +19,11 @@ img {
   object-fit: cover;
 }
 hr {
-width:100%;
-height:2px
-color: ghostwhite; 
-text-align:right;
-margin-left:0;
+  width:100%;
+  height:2px
+  color: ghostwhite; 
+  text-align:right;
+  margin-left:0;
 }
 .sidenavtitle {
   padding: 4px 8px 4px 32px;
