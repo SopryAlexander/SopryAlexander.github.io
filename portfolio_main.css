@@ -5,7 +5,7 @@ body{
 }
 img {
   width: 1080px;
-  max-width: 80%;
+  max-width: 90%;
   align-self: center;
   border-radius: 10px;
   object-fit: cover;
